@@ -27,3 +27,11 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+sources: https://www.desmos.com/calculator/tsjsktxkin  - used to compute different numbers to see what going on
+
+
+An invariant for this is that at the start of each recursive call, all the fibonacci numbers before "n-1" must be included in the array. This is because array.push(array[n - 1]) ensures that the most recent fibonacci number is added along side the one right before that one where its done in array[n - 2]. This must hold true before each call, as it is continuously appending to the array all the fibonacci numbers to ensure that when the next loop goes through it has all those values already. 
+
+
+"I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice."
